@@ -19,8 +19,7 @@ Number.prototype.zf = function (len) { return this.toString().zf(len); };
 function TimeEvent(){
   let today = new Date();
   let setToday = today.format('MM/dd/yyyy');
-  // let isholliday = hollidays.hollidays.find(setToday);
-  // console.log(isholliday);
+
   if((today.getDay() >=1 && today.getDay() <= 5)){ //월~금, 홀리데이 판별
 
     //평일마다 일어나는 이벤트

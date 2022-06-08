@@ -2,8 +2,8 @@ Date.prototype.format = function (f) {
 if (!this.valueOf()) return " ";
 let d = this;
 
-return f.replace(/(yyyy|MM|dd)/gi, function ($1) {
-    switch ($1) {
+return f.replace(/(yyyy|MM|dd)/gi, function (i) {
+    switch (i) {
         case "yyyy": return d.getFullYear(); // 년 (4자리)
         case "MM": return (d.getMonth() + 1).zf(2); // 월 (2자리)
         case "dd": return d.getDate().zf(2); // 일 (2자리)
